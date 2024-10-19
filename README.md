@@ -1,2 +1,2 @@
 # ENSEA - Typst Template
-Custom templates for documents made at ENSEA Cergy.
+Custom templates for documents made at ENSEA.
