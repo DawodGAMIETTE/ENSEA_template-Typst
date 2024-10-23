@@ -49,6 +49,9 @@
   ]))
 }
 
+    // Disable paragraph justification for raw blocks eg. codelst package
+    show raw.where(block: true): set par(justify: false)
+
   // Center align the title block
   align(center)[
     #block(text(weight: 700, 1.75em, title))
