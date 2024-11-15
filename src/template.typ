@@ -37,8 +37,8 @@
   show figure.caption: emph
   // Align figure captions based on their width
   show figure.caption: it => {
-  layout(size => style(styles => [
-    #let text-size = measure(it.supplement + it.separator + it.body, styles)
+  layout(size => [
+    #let text-size = measure(it.supplement + it.separator + it.body)
     #let my-align
     #if text-size.width < size.width {
       my-align = center
@@ -46,7 +46,7 @@
       my-align = left
     }
     #align(my-align, it)
-  ]))
+  ])
 }
 
     // Disable paragraph justification for raw blocks eg. codelst package
